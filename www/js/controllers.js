@@ -181,7 +181,7 @@ var smokeControllers = angular.module('smokeControllers', [])
           isPlaying   : true,
           hasPrev   : false,
           hasNext   : false,
-          hasClose  : false,
+          hasClose  : true,
           ticker	  : "You're listening to Smoke Radio - London's student sound"
         });
         function events(action) {
