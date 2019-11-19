@@ -32,11 +32,11 @@
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="3000" />
     <engine name="android" spec="^6.2.3" />
-    <plugin name="cordova-disable-http-cache" />
-    <plugin name="cordova-plugin-headercolor" />
-    <plugin name="cordova-plugin-music-controls" />
-    <plugin name="cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-statusbar" />
-    <plugin name="cordova-plugin-whitelist" />
+    <gap:plugin name="cordova-disable-http-cache"source="npm"  />
+    <gap:plugin name="cordova-plugin-headercolor" source="npm" />
+    <gap:plugin name="cordova-plugin-music-controls" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 </widget>
