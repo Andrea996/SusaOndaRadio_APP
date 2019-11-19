@@ -184,12 +184,31 @@ var smokeControllers = angular.module('smokeControllers', [])
           hasClose  : true,
           ticker	  : "You're listening to Smoke Radio - London's student sound"
         });
-        playIcon: 'media_play',
-	pauseIcon: 'media_pause',
-	prevIcon: 'media_prev',
-	nextIcon: 'media_next',
-	closeIcon: 'media_close',
-	notificationIcon: 'notification'
+        function events(action) {
+          const message = JSON.parse(action).message;
+          switch(message) {
+            case 'music-controls-pause':
+              // Do something
+              audio.pause();
+              var tempSrc = audio.src;
+              audio.src = '';
+              audio.src = tempSrc;
+              button.classList.remove('fa-pause');
+              button.classList.add('fa-play');
+              MusicControls.updateIsPlaying(false);
+              break;
+            case 'music-controls-play':
+              // Do something
+              audio.play();
+              button.classList.remove('fa-play');
+              button.classList.add('fa-pause');
+              MusicControls.updateIsPlaying(true);
+              break;
+            case 'music-controls-media-button' :
+              // Do something
+              break;
+            default:
+              break;
           }
         }
         // Register callback
