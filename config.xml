@@ -38,5 +38,5 @@
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-statusbar" />
     <plugin name="cordova-plugin-whitelist" />
-    <plugin name="cordova-plugin-x-socialsharing" />
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 </widget>
