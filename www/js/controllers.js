@@ -176,7 +176,7 @@ var smokeControllers = angular.module('smokeControllers', [])
         // Create notification
         MusicControls.create({
           track: $scope.radio.title,
-          artist: "Smoke Radio",
+          artist: "Susa Onda Radio",
           cover: $scope.radio.icon_thumb,
           isPlaying   : true,
           hasPrev   : false,

@@ -176,13 +176,13 @@ var smokeControllers = angular.module('smokeControllers', [])
         // Create notification
         MusicControls.create({
           track: $scope.radio.title,
-          artist: "Smoke Radio",
+          artist: "Susa Onda Radio",
           cover: $scope.radio.icon_thumb,
           isPlaying   : true,
           hasPrev   : false,
           hasNext   : false,
           hasClose  : false,
-          ticker	  : "You're listening to Smoke Radio - London's student sound"
+          ticker	  : "La radio della Valle"
         });
         function events(action) {
           const message = JSON.parse(action).message;
@@ -246,8 +246,8 @@ var smokeControllers = angular.module('smokeControllers', [])
       } else {
         // If there is no show, supply dummy data
         $scope.radio = {
-          title: "Smoke Jukebox",
-          desc: "The best tracks from Smoke Radio's catalogue.",
+          title: "Susa Onda Radio",
+          desc: "",
           icon_thumb: 'assets/smokeradio.png'
         }
       }
