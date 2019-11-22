@@ -8,7 +8,7 @@ var smokeProviders = angular.module('smokeProviders', [])
     var deferred = $q.defer();
     // Make the HTTP request
     $http
-      .get('http://vps755088.ovh.net/api/nowplaying/12')
+      .get('https://prolococondove.it/statistics.json')
       .then(function(res){
         // On success
         deferred.resolve(res.data);
