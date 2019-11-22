@@ -175,7 +175,7 @@ var smokeControllers = angular.module('smokeControllers', [])
         $scope.$applyAsync();
         // Create notification
         MusicControls.create({
-          track: $scope.radio,
+          track: $scope.radio.totalstreams,
           artist: "Susa Onda Radio",
           cover: $scope.radio.icon_thumb,
           isPlaying   : true,
@@ -242,7 +242,7 @@ var smokeControllers = angular.module('smokeControllers', [])
     radioData.nowPlaying().then(function(info) {
       // Set the data in the scope
       if (info.totalstreams == 1) {
-        info.songtitle;
+        $scope.radio = info.totalstreams;
       } else {
         // If there is no show, supply dummy data
         $scope.radio = {
