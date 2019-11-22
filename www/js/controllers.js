@@ -242,7 +242,7 @@ var smokeControllers = angular.module('smokeControllers', [])
     radioData.nowPlaying().then(function(info) {
       // Set the data in the scope
       if (info.totalstreams == 1) {
-        $scope.radio = info.songtitle;
+        info.songtitle;
       } else {
         // If there is no show, supply dummy data
         $scope.radio = {
