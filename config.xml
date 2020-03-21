@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="10004" defaultlocale="en" id="io.smokemedia.smokemedia" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Smoke Media</name>
+<widget android-versionCode="10004" defaultlocale="it" id="it.susaondaradio.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Susa Onda Radio</name>
     <description>
-        Read the latest news, reviews and features from Smoke Media, and tune into Smoke Radio.
+          La radio della valle per la valle
     </description>
-    <author email="smc@smoke.media" href="http://smoke.media">
-        Joshua Hackett
+    <author email="info@susaondaradio.it" href="https://susaondaradio.it">
+        Salvai Andrea
     </author>
     <content src="index.html" />
     <access origin="*" />
