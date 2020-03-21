@@ -41,7 +41,7 @@ smokeRoutes.config(function($stateProvider, $urlRouterProvider){
 
     .state('schedule', {
       url: '/schedule',
-      templateUrl: 'views/schedule.html',
+      templateUrl: 'views/contact.html',
       controller: 'scheduleController',
       // Get the data before displaying the view
       resolve: {
