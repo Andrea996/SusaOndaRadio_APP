@@ -8,7 +8,7 @@ var smokeProviders = angular.module('smokeProviders', [])
     var deferred = $q.defer();
     // Make the HTTP request
     $http
-      .get('http://smoke.media/wp-json/shows/now_playing')
+      .get('http://freemountasd.it/nowplaying.json')
       .then(function(res){
         // On success
         deferred.resolve(res.data);
