@@ -241,8 +241,8 @@ var smokeControllers = angular.module('smokeControllers', [])
     // Call the radio data service
     radioData.nowPlaying().then(function(info) {
       // Set the data in the scope
-      if (info.success == 1) {
-        $scope.radio = info.show;
+      if (info.id == 1) {
+        $scope.radio = info.title;
       } else {
         // If there is no show, supply dummy data
         $scope.radio = {
