@@ -9,6 +9,37 @@
 
 
 <div class="post-grid-holder">
-        <h2>WhatsApp</h2>
-        <p>3341063239</p>
+<ul class="post-grid category">
+  <li class="category-title" ng-show="category"><h2>{{category}}</h2></li>
+  <li onclick="explodeLi(this)" ng-repeat="post in posts" ng-switch="$index">
+    <div ng-switch-when="3">
+      <div class="info">
+        <h2 ng-bind-html="post.title.rendered"></h2>
+        <p ng-bind-html="post.excerpt.rendered"></p>
+      </div>
+      <a class="link" ui-sref="single({slug: post.slug})" onclick="closeMenu()"></a>
+    </div>
+    <div ng-switch-when="6">
+      <div class="info">
+        <h2 ng-bind-html="post.title.rendered"></h2>
+        <p ng-bind-html="post.excerpt.rendered"></p>
+      </div>
+      <a class="link" ui-sref="single({slug: post.slug})" onclick="closeMenu()"></a>
+    </div>
+    <div ng-switch-when="7">
+      <div class="info">
+        <h2>{{post.title.rendered}}</h2>
+        <p ng-bind-html="post.excerpt.rendered"></p>
+      </div>
+      <a class="link" ui-sref="single({slug: post.slug})" onclick="closeMenu()"></a>
+    </div>
+    <div ng-switch-default>
+      <div class="featured-image" style="background-image:url({{post.featured_image_thumbnail_url}})"></div>
+      <div class="info">
+        <h2 ng-bind-html="post.title.rendered"></h2>
+      </div>
+      <a class="link" ui-sref="single({slug: post.slug})" onclick="closeMenu()"></a>
+    </div>
+  </li>
+</ul>
 </div>
