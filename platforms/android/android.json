@@ -73,28 +73,28 @@
     },
     "installed_plugins": {
         "cordova-disable-http-cache": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "cordova-plugin-headercolor": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "cordova-plugin-music-controls": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "es6-promise-plugin": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "it.susaondaradio.app"
+            "PACKAGE_NAME": "io.smokemedia.smokemedia"
         }
     },
     "dependent_plugins": {},
