@@ -18,7 +18,7 @@ smokeRoutes.config(function($stateProvider, $urlRouterProvider){
     .state('contatti', {
       url: '/contatti',
       templateUrl: 'views/contatti.html',
-      controller: 'contattiController'
+      controller: 'scheduleController'
     })
     // Single article view
     .state('single', {
