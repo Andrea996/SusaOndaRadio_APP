@@ -242,11 +242,11 @@ var smokeControllers = angular.module('smokeControllers', [])
     radioData.nowPlaying().then(function(info) {
       // Set the data in the scope
       if (info.id == 1) {
-        $scope.radio = info.title;
+        $scope.radio = info.show;
       } else {
         // If there is no show, supply dummy data
         $scope.radio = {
-          title: "Smoke Jukebox",
+          title: "Susa Onda Radio",
           desc: "The best tracks from Smoke Radio's catalogue.",
           icon_thumb: 'assets/smokeradio.png'
         }
