@@ -1,7 +1,7 @@
 var smokeRoutes = angular.module('smokeRoutes', [])
 
 // WP api endpoint
-var api = 'http://susaondaradio.it/wp-json/wp/v2'
+var api = 'http://smoke.media/wp-json/wp/v2'
 
 // ROUTES
 smokeRoutes.config(function($stateProvider, $urlRouterProvider){
@@ -26,100 +26,6 @@ smokeRoutes.config(function($stateProvider, $urlRouterProvider){
         }
       }
     })
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
     // Category view
     .state('category', {
       url: '/category/:id',
