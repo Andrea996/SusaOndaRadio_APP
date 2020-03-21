@@ -17,7 +17,7 @@
        under the License.
  */
 
-package it.susaondaradio.app;
+package io.smokemedia.smokemedia;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
