@@ -1,7 +1,7 @@
 var smokeRoutes = angular.module('smokeRoutes', [])
 
 // WP api endpoint
-var api = 'http://susaondaradio.it/wp-json/wp/v2'
+var api = 'http://susaondaradio.it/wp-json/wp/v2/posts?_embed'
 
 // ROUTES
 smokeRoutes.config(function($stateProvider, $urlRouterProvider){
