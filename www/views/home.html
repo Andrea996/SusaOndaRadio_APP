@@ -25,7 +25,7 @@
       <a class="link" ui-sref="single({slug: post.slug})" onclick="closeMenu()"></a>
     </div>
     <div ng-switch-default>
-      <div class="featured-image" style="background-image:url({{post.featured_image_thumbnail_url}})"></div>
+      <div class="featured-image" style="background-image:url({{post.thumbnail_source_url}})"></div>
       <div class="info">
         <h2 ng-bind-html="post.title.rendered"></h2>
       </div>
