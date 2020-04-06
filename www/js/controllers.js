@@ -120,6 +120,20 @@ var smokeControllers = angular.module('smokeControllers', [])
     });
   }
 })
+// Contatti controllers
+.controller('newsController', function($scope, $stateParams, schedule, $state, radioData){
+  // Make the data available in scope
+  $scope.schedule = news;
+  $scope.viewName = 'news';
+  // The reload method
+  $scope.reload = function(){
+    $scope.schedule = false;
+    radioData.getSchedule().then(function(posts) {
+      $scope.schedule = posts;
+      $state.reload();
+    });
+  }
+})
 .controller('scheduleDayController', function($scope, $stateParams){
   // Get the day as a zero-indexed integer, where 0=Sunday and 6=Saturday
   var date = new Date();
