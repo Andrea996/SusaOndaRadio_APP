@@ -279,3 +279,4 @@ public class MusicControlsNotification {
 		this.notificationManager.cancel(this.notificationID);
 	}
 }
+
