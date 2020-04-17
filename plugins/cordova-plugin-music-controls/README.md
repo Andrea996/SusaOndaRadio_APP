@@ -1,13 +1,19 @@
+# No longer maintained.
+
+Gavin Henry ([ghenry22](https://github.com/ghenry22)) has been maintaining a fork that should be updated and working better than this one. Please use his fork.
+
+https://github.com/ghenry22/cordova-music-controls-plugin
+
 # Cordova Music Controls Plugin
 
-<img src='https://github.com/homerours/cosmic/blob/master/screenshots/notification.png' width='564' height='342'>
+<img src='https://imgur.com/fh3ACOq.png' width='564' height='342'>
 
 Music controls for Cordova applications. Display a 'media' notification with play/pause, previous, next buttons, allowing the user to control the play. Handle also headset event (plug, unplug, headset button).
 
 ## Supported platforms
 - Android (4.1+)
 - Windows (10+, by [filfat](https://github.com/filfat))
-- iOS (by [0505gonzalez](https://github.com/0505gonzalez))
+- iOS 8+ (by [0505gonzalez](https://github.com/0505gonzalez))
 
 ## Installation
 `cordova plugin add https://github.com/homerours/cordova-music-controls-plugin`
@@ -16,9 +22,10 @@ Music controls for Cordova applications. Display a 'media' notification with pla
 - Create the media controls:
 ```javascript
 MusicControls.create({
-    track       : 'Time is Running Out',		// optional, default : ''
+	track       : 'Time is Running Out',		// optional, default : ''
 	artist      : 'Muse',						// optional, default : ''
-    cover       : 'albums/absolution.jpg',		// optional, default : nothing
+	album       : 'Absolution',     // optional, default: ''
+ 	cover       : 'albums/absolution.jpg',		// optional, default : nothing
 	// cover can be a local path (use fullpath 'file:///storage/emulated/...', or only 'my_image.jpg' if my_image.jpg is in the www folder of your app)
 	//			 or a remote url ('http://...', 'https://...', 'ftp://...')
 	isPlaying   : true,							// optional, default : true
@@ -30,13 +37,26 @@ MusicControls.create({
 	hasClose  : true,		// show close button, optional, default: false
 
 	// iOS only, optional
-	album       : 'Absolution',     // optional, default: ''
-  	duration : 60, // optional, default: 0
-  	elapsed : 10, // optional, default: 0
+	
+	duration : 60, // optional, default: 0
+	elapsed : 10, // optional, default: 0
+  	hasSkipForward : true, //optional, default: false. true value overrides hasNext.
+  	hasSkipBackward : true, //optional, default: false. true value overrides hasPrev.
+  	skipForwardInterval : 15, //optional. default: 0.
+	skipBackwardInterval : 15, //optional. default: 0.
+	hasScrubbing : false, //optional. default to false. Enable scrubbing from control center progress bar 
 
 	// Android only, optional
 	// text displayed in the status bar when the notification (and the ticker) are updated
-	ticker	  : 'Now playing "Time is Running Out"'
+	ticker	  : 'Now playing "Time is Running Out"',
+	//All icons default to their built-in android equivalents
+	//The supplied drawable name, e.g. 'media_play', is the name of a drawable found under android/res/drawable* folders
+	playIcon: 'media_play',
+	pauseIcon: 'media_pause',
+	prevIcon: 'media_prev',
+	nextIcon: 'media_next',
+	closeIcon: 'media_close',
+	notificationIcon: 'notification'
 }, onSuccess, onError);
 ```
 
@@ -75,7 +95,7 @@ function events(action) {
 			const seekToInSeconds = JSON.parse(action).position;
 			MusicControls.updateElapsed({
 				elapsed: seekToInSeconds,
-				isPlaying: true 
+				isPlaying: true
 			});
 			// Do something
 			break;
@@ -119,7 +139,13 @@ MusicControls.updateElapsed({
 });
 ```
 
-- List of media button events (Android only):
+## List of media button events 
+- Default:
+```javascript
+'music-controls-media-button'
+```
+
+- Android only:
 ```javascript
 'music-controls-media-button-next', 'music-controls-media-button-pause', 'music-controls-media-button-play',
 'music-controls-media-button-play-pause', 'music-controls-media-button-previous', 'music-controls-media-button-stop',
@@ -128,9 +154,11 @@ MusicControls.updateElapsed({
 'music-controls-media-button-meta-left', 'music-controls-media-button-meta-right', 'music-controls-media-button-music',
 'music-controls-media-button-volume-up', 'music-controls-media-button-volume-down', 'music-controls-media-button-volume-mute',
 'music-controls-media-button-headset-hook'
+```
 
-// Default:
-'music-controls-media-button'
+- iOS Only:
+```javascript
+'music-controls-skip-forward', 'music-controls-skip-backward'
 ```
 
 ## Contributing
