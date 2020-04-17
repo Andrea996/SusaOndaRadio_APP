@@ -1,6 +1,6 @@
 //
 //  MusicControlsInfo.h
-//
+//  
 //
 //  Created by Juan Gonzalez on 12/17/16.
 //
@@ -18,16 +18,11 @@
 @property NSString * album;
 @property NSString * ticker;
 @property NSString * cover;
-@property NSUInteger duration;
-@property NSUInteger elapsed;
+@property int duration;
+@property int elapsed;
 @property bool isPlaying;
 @property bool hasPrev;
 @property bool hasNext;
-@property bool hasSkipForward;
-@property bool hasSkipBackward;
-@property bool hasScrubbing;
-@property NSUInteger skipForwardInterval;
-@property NSUInteger skipBackwardInterval;
 @property bool dismissable;
 
 - (id) initWithDictionary: (NSDictionary *) dictionary;
