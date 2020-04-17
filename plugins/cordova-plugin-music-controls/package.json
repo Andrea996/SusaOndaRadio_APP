@@ -1,38 +1,41 @@
 {
-  "name": "cordova-plugin-music-controls",
-  "version": "2.2.0",
-  "description": "Music controls for Cordova apps",
-  "cordova": {
-    "id": "cordova-plugin-music-controls",
-    "platforms": ["android", "windows", "ios"]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/homerours/cordova-music-controls-plugin.git"
-  },
-  "keywords": [
-    "cordova",
-    "music",
-    "controller",
-    "controls",
-    "media",
-    "plugin",
-    "notification",
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-windows"
-  ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.4.0"
-    }
-  ],
-  "author": "homerours",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/homerours/cordova-music-controls-plugin/issues"
-  },
-  "homepage":
-    "https://github.com/homerours/cordova-music-controls-plugin#readme"
+	"name": "cordova-music-controls",
+	"version": "2.2.1",
+	"description": "Music controls for Cordova apps",
+	"cordova": {
+		"id": "cordova-music-controls",
+		"platforms": [
+			"android",
+			"windows",
+			"ios"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ekaanth/cordova-music-controls.git"
+	},
+	"keywords": [
+		"cordova",
+		"music",
+		"controller",
+		"controls",
+		"media",
+		"plugin",
+		"notification",
+		"ecosystem:cordova",
+		"cordova-android",
+		"cordova-windows"
+	],
+	"engines": [
+		{
+			"name": "cordova",
+			"version": ">=3.4.0"
+		}
+	],
+	"author": "homerours",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Ekaanth/cordova-music-controls/issues"
+	},
+	"homepage": "https://github.com/Ekaanth/cordova-music-controls#readme"
 }
